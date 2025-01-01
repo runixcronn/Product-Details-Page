@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 
 export default function Product({ details }) {
   return (
-    <Link to={`/products/${details.id}`} style={{ textDecoration: "none" }}>
+    <Link
+      to={`/products/${details.id}`}
+      style={{ textDecoration: "none", fontFamily: "Arial", color: "black" }}
+    >
       <div className="product">
         <img src={details.image} width="50" alt={details.name} />
         <div className="product-info">
